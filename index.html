@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home Movie - List Film and TV-Series</title>
+        <link rel="stylesheet" href="./assets/styles/style.css"/>
+        <link rel="stylesheet" href="./assets/styles/lightslider.css">
+        <!-- js-link -->
+        <script src="./assets/js/JQuery3.3.1.js"></script>
+        <script src="./assets/js/lightslider.js"></script>
+        <!-- fav icon -->
+        <link rel="icon" href="./assets/img/logo_white.png">
+        <!-- fontAwesome -->
+        <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <!-- navigation -->
+        <nav>
+            <a href="#" class="logo">
+                <img src="./assets/img/logo_black.png"/>
+            </a>
+            <!-- menu-btn -->
+            <input type="checkbox" class="menu-btn" id="menu-btn"/>
+            <label class="menu-icon" for="menu-btn">
+                <span class="nav-icon"></span>
+            </label>
+            <!-- menu -->
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#showcase">Showcase</a></li>
+                <li><a href="#latest">Latest</a></li>
+                <li><a href="#movie">Movies</a></li>
+            </ul>
+            <!-- search -->
+            <div class="search">
+                <input type="text" placeholder="Find Your Favorite Movies"/>
+                <!-- search icon -->
+                <i class="fas fa-search"></i>
+            </div>
+        </nav>
+
+        <section id="main">
+            <!-- showcase -->
+            <!-- heading -->
+            <h1 class="showcase-heading" id="showcase">Showcase</h1>
+
+            <ul id="autoWidth" class="cs-hidden">
+                <!-- box-1 -->
+                <li class="item-a">
+                    <!-- showcase-box -->
+                    <div class="showcase-box">
+                        <img src="./assets/img/s-1.jpg"/>
+                    </div>
+                </li>
+                <!-- box-2 -->
+                <li class="item-b">
+                    <!-- showcase-box -->
+                    <div class="showcase-box">
+                        <img src="./assets/img/s-2.jpg"/>
+                    </div>
+                </li>
+                <!-- box-3 -->
+                <li class="item-c">
+                    <!-- showcase-box -->
+                    <div class="showcase-box">
+                        <img src="./assets/img/s-3.jpg"/>
+                    </div>
+                </li>
+                <!-- box-4 -->
+                <li class="item-d">
+                    <!-- showcase-box -->
+                    <div class="showcase-box">
+                        <img src="./assets/img/s-4.jpg"/>
+                    </div>
+                </li>
+                <!-- box-5 -->
+                <li class="item-e">
+                    <!-- showcase-box -->
+                    <div class="showcase-box">
+                        <img src="./assets/img/s-5.png"/>
+                    </div>
+                </li>
+              </ul>
+        </section>
+        <!-- latest movies -->
+        <section id="latest">
+            <h2 class="latest-heading">Latest Movies</h2>
+            <!-- slider -->
+            <ul id="autoWidth2" class="cs-hidden">
+                <!-- slide-box 1 -->
+                <li class="item-a" onclick="kin(movieModal)">
+                    <div class="latest-box">
+                        <!-- img -->
+                        <div class="latest-b-img">
+                            <img src="./assets/img/kin.jpg">
+                        </div>
+                    </div>
+                </li>
+                <!-- slide-box 2 -->
+                <li class="item-b" onclick="peninsula(movieModal)">
+                    <div class="latest-box">
+                        <!-- img -->
+                        <div class="latest-b-img">
+                            <img src="./assets/img/peninsula.jpg">
+                        </div>
+                    </div>
+                </li>
+                <!-- slide-box 3 -->
+                <li class="item-c" onclick="inception(movieModal)">
+                    <div class="latest-box">
+                        <!-- img -->
+                        <div class="latest-b-img">
+                            <img src="./assets/img/inception.jpg">
+                        </div>
+                    </div>
+                </li>
+                <!-- slide-box 4 -->
+                <li class="item-d" onclick="ironman(movieModal)">
+                    <div class="latest-box">
+                        <!-- img -->
+                        <div class="latest-b-img">
+                            <img src="./assets/img/ironman3.jpg">
+                        </div>
+                    </div>
+                </li>
+                <!-- slide-box 5 -->
+                <li class="item-e" onclick="venom(movieModal)">
+                    <div class="latest-box">
+                        <!-- img -->
+                        <div class="latest-b-img">
+                            <img src="./assets/img/venom.jpg">
+                        </div>
+                    </div>
+                </li>
+                <!-- slide-box 6 -->
+                <li class="item-f" onclick="aquaman(movieModal)">
+                    <div class="latest-box">
+                        <!-- img -->
+                        <div class="latest-b-img">
+                            <img src="./assets/img/aquaman.jpg">
+                        </div>
+                    </div>
+                </li>
+                <!-- slide-box 7 -->
+                <li class="item-g" onclick="johnwick(movieModal)">
+                    <div class="latest-box">
+                        <!-- img -->
+                        <div class="latest-b-img">
+                            <img src="./assets/img/johnwick3.jpg">
+                        </div>
+                    </div>
+                </li>
+              </ul>
+        </section>
+        <!-- movies -->
+        <div class="movies-heading" id="movie">
+            <h2>Movies</h2>
+        </div>
+        <section id="movie-list">
+            <!-- movies-1 -->
+            <div class="movies-box" onclick="kin(movieModal)">
+                <div class="movies-img">
+                    <img src="./assets/img/kin.jpg">
+                </div>
+            </div>
+            <!-- movies-2 -->
+            <div class="movies-box" onclick="peninsula(movieModal)">
+                <div class="movies-img">
+                    <img src="./assets/img/peninsula.jpg">
+                </div>
+            </div>
+            <!-- movies-3 -->
+            <div class="movies-box" onclick="inception(movieModal)">
+                <div class="movies-img">
+                    <img src="./assets/img/inception.jpg">
+                </div>
+            </div>
+            <!-- movies-4 -->
+            <div class="movies-box" onclick="ironman(movieModal)">
+                <div class="movies-img">
+                    <img src="./assets/img/ironman3.jpg">
+                </div>
+            </div>
+            <!-- movies-5 -->
+            <div class="movies-box" onclick="venom(movieModal)">
+                <div class="movies-img">
+                    <img src="./assets/img/venom.jpg">
+                </div>
+            </div>
+            <!-- movies-6 -->
+            <div class="movies-box" onclick="aquaman(movieModal)">
+                <div class="movies-img">
+                    <img src="./assets/img/aquaman.jpg">
+                </div>
+            </div>
+            <!-- movies-7 -->
+            <div class="movies-box" onclick="johnwick(movieModal)">
+                <div class="movies-img">
+                    <img src="./assets/img/johnwick3.jpg">
+                </div>
+            </div>
+            <!-- movies-8 -->
+            <div class="movies-box" onclick="fantasticbeast(movieModal)">
+                <div class="movies-img">
+                    <img src="./assets/img/fantasticbeast.jpg">
+                </div>
+            </div>
+            <!-- movies-9 -->
+            <div class="movies-box" onclick="rogueone(movieModal)">
+                <div class="movies-img">
+                    <img src="./assets/img/rogueone.jpg">
+                </div>
+            </div>
+            <!-- movies-10 -->
+            <div class="movies-box" onclick="intodarkness(movieModal)">
+                <div class="movies-img">
+                    <img src="./assets/img/intodarkness.jpg">
+                </div>
+            </div>
+        </section>
+        <!-- movies-modal -->
+        <div id="movieModal" class="modal">
+            <!-- modal-content -->
+            <span class="close-modal">&times;</span>
+            <div class="modal-content">
+                <div class="movie-info">
+                    <img id="poster" class="movie-poster">
+    
+                    <div class="about-movie"> 
+                        <h3 id="title">Lorem Ipsum</h3>
+                        <p id="genre">Lorem</p>
+                        <p id="rating-num">9/10</p>
+                        <h4>Description:</h4>
+                        <p id="movie-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+    
+                <div class="movie-link">
+                    <a id="imdb-page" href="#" target="_blank">IMDB Page</a>
+                </div>
+            </div>
+        </div>
+        <!-- btn -->
+        <div class="btn">
+            <a href="#">Previous</a>
+            <a href="#">Next</a>
+        </div>
+        <!-- footer -->
+        <footer>
+            <p>Nazhif Azka Fadlillah </p>
+            <p>200102101 - IF A</p>
+        </footer>
+
+        <!-- slider-script -->
+        <script src="./assets/js/script.js"></script>
+        <script>
+             $(document).ready(function() {
+                $('#autoWidth,#autoWidth2').lightSlider({
+                    autoWidth:true,
+                    loop:true,
+                    onSliderLoad: function() {
+                        $('#autoWidth,#autoWidth2').removeClass('cs-hidden');
+                    } 
+                });  
+            });
+        </script>
+    </body>
+</html>
